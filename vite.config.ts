@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "assesment-kledo-fe-maret-2026",
+  base: "/assesment-kledo-fe-maret-2026/",
   plugins: [
     react(),
     tailwindcss()
