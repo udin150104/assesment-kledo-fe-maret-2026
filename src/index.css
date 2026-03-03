@@ -1,0 +1,15 @@
+@config "../tailwind.config.mjs";
+@import "tailwindcss";
+@import "../node_modules/flyonui/variants.css";
+@source "../node_modules/flyonui/dist/index.js";
+
+/**
+* style untuk class select, buat transparent ketika disabled, agar terlihat disabled
+* digunakan pada class select di Filter.tsx
+*/
+.select {
+    &:has(> select[disabled]) > select[disabled] {
+        cursor: not-allowed;
+        background: transparent;
+    }
+}
